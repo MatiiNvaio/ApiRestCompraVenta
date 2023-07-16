@@ -24,6 +24,10 @@ public class Venta implements Serializable {
     @JoinColumn(name = "empleado_id")
     private Empleado empleado;
 
+    @ManyToOne
+    @JoinColumn(name = "producto_id")
+    private Producto producto;
+
     public Venta() { }
 
     public Long getId() {
@@ -57,4 +61,8 @@ public class Venta implements Serializable {
     public Empleado getEmpleado() { return empleado; }
 
     public void setEmpleado(Empleado empleado) { this.empleado = empleado; }
+
+    public Producto getProducto() { return producto; }
+
+    public void setProducto(Producto producto) { this.producto = producto; }
 }

@@ -18,6 +18,14 @@ INSERT INTO empleados (nombre, apellido, email) VALUES('Matias', 'Navio', 'jane.
 INSERT INTO empleados (nombre, apellido, email) VALUES('Agustin', 'Navio', 'jane.doe@gmail.com');
 INSERT INTO empleados (nombre, apellido, email) VALUES('Eseba', 'Carrizo', 'jane.doe@gmail.com');
 
-insert into ventas (monto, tipo_pago, cliente_id, empleado_id) values(2000.0, 'Efectivo', 1, 1)
-insert into ventas (monto, tipo_pago, cliente_id, empleado_id) values(1450.5, 'Débito', 2, 2)
-insert into ventas (monto, tipo_pago, cliente_id, empleado_id) values(12000, 'Crédito', 3, 3)
+insert into productos (marca, precio, tipo) values('LG', 120000, 'Heladera')
+insert into productos (marca, precio, tipo) values('SONY', 60000, 'Parlantes')
+insert into productos (marca, precio, tipo) values('Samsung', 130000, 'Teléfono')
+
+insert into ventas (monto, tipo_pago, cliente_id, empleado_id, producto_id) values(2000.0, 'Efectivo', 1, 1, 1)
+insert into ventas (monto, tipo_pago, cliente_id, empleado_id, producto_id) values(1450.5, 'Débito', 2, 2, 2)
+insert into ventas (monto, tipo_pago, cliente_id, empleado_id, producto_id) values(12000, 'Crédito', 3, 3, 3)
+
+
+
+

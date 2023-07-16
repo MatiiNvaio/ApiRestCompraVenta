@@ -1,6 +1,7 @@
 package com.example.demo.models.entity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name="productos")
@@ -15,6 +16,12 @@ public class Producto {
     private String marca;
     private double precio;
     private String tipo;
+
+    @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL)
+    private List<Venta> ventaList;
+    private Venta venta;
+
+    public Producto() { }
 
     public Long getId() { return id; }
 
