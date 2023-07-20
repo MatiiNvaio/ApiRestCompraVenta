@@ -17,6 +17,7 @@ public class Producto {
     private double precio;
     private String tipo;
 
+
     @OneToMany(mappedBy = "producto", cascade = CascadeType.ALL)
     private List<Venta> ventaList;
     private Venta venta;
@@ -38,4 +39,5 @@ public class Producto {
     public String getTipo() { return tipo; }
 
     public void setTipo(String tipo) { this.tipo = tipo; }
+
 }

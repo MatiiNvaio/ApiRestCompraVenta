@@ -2,17 +2,13 @@
 
 
 
-INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Marina', 'Belliville', 'ema-test@gmail.com', '2018-01-01');
-INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Mr. John', 'Doe', 'john.doe@gmail.com', '2018-01-02');
-INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Linus', 'Torvalds', 'linus.torvalds@gmail.com', '2018-01-03');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Rasmus', 'Lerdorf', 'rasmus.lerdorf@gmail.com', '2018-01-04');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Erich', 'Gamma', 'erich.gamma@gmail.com', '2018-02-01');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Richard', 'Helm', 'richard.helm@gmail.com', '2018-02-10');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Ralph', 'Johnson', 'ralph.johnson@gmail.com', '2018-02-18');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('John', 'Vlissides', 'john.vlissides@gmail.com', '2018-02-28');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Dr. James', 'Gosling', 'james.gosling@gmail.com', '2018-03-03');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Magma', 'Lee', 'magma.lee@gmail.com', '2018-03-04');
---INSERT INTO clientes (nombre, apellido, email, create_at) VALUES('Tornado', 'Roe', 'tornado.roe@gmail.com', '2018-03-05');
+insert into tarjetas (num_tarjeta, fecha_vencimiento) values ('3465474734', '2027-03-13')
+insert into tarjetas (num_tarjeta, fecha_vencimiento) values ('3465445734', '2027-06-13')
+insert into tarjetas (num_tarjeta, fecha_vencimiento) values ('6578924435', '2027-11-22')
+
+INSERT INTO clientes (nombre, apellido, email, fecha_nacimiento, tarjeta_id) VALUES('Marina', 'Belliville', 'ema-test@gmail.com', '2018-01-01', 1);
+INSERT INTO clientes (nombre, apellido, email, fecha_nacimiento, tarjeta_id) VALUES('Mr. John', 'Doe', 'john.doe@gmail.com', '2018-01-02', 2);
+INSERT INTO clientes (nombre, apellido, email, fecha_nacimiento, tarjeta_id) VALUES('Linus', 'Torvalds', 'linus.torvalds@gmail.com', '2018-01-03', 3);
 
 INSERT INTO empleados (nombre, apellido, email) VALUES('Matias', 'Navio', 'jane.doe@gmail.com');
 INSERT INTO empleados (nombre, apellido, email) VALUES('Agustin', 'Navio', 'jane.doe@gmail.com');

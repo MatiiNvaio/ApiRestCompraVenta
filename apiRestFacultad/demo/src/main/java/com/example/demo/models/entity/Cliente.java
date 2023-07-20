@@ -24,11 +24,15 @@ public class Cliente implements Serializable {
     private List<Venta> ventaList;
     private Venta venta;
 
+    @OneToOne
+    @JoinColumn(name = "tarjeta_id")
+    private TarjetaSocio tarjeta;
+
     public Cliente(){ }
 
-    @Column(name="create_at")
+    @Column(name="fecha_nacimiento")
     @Temporal(TemporalType.DATE)
-    private Date createAt;
+    private Date fecha_nacimiento;
 
     public Long getId() {
         return id;
@@ -62,21 +66,13 @@ public class Cliente implements Serializable {
         this.email = email;
     }
 
-    public Date getCreateAt() {
-        return createAt;
-    }
+    public Date getFecha_nacimiento() {return fecha_nacimiento;}
 
-    public void setCreateAt(Date createAt) { this.createAt = createAt; }
-
-//    public Venta getVenta() {
-//        return venta;
-//    }
-
-//    public void setVentas(Venta venta) {
-//        this.venta = venta;
-//    }
+    public void setFecha_nacimiento(Date fecha_nacimiento) {this.fecha_nacimiento = fecha_nacimiento;}
 
     public Cliente(Long id) { this.id = id; }
 
+    public TarjetaSocio getTarjeta() {return tarjeta;}
 
+    public void setTarjeta(TarjetaSocio tarjeta) {this.tarjeta = tarjeta;}
 }

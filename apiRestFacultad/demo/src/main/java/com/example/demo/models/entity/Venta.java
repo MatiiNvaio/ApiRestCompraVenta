@@ -30,31 +30,19 @@ public class Venta implements Serializable {
 
     public Venta() { }
 
-    public Long getId() {
-        return id;
-    }
+    public Long getId() {return id;}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+    public void setId(Long id) {this.id = id;}
 
-    public double getMonto() {
-        return monto;
-    }
+    public double getMonto() {return monto;}
 
     public void setMonto(double monto) { this.monto = monto; }
 
-    public String getTipo_pago() {
-        return tipo_pago;
-    }
+    public String getTipo_pago() {return tipo_pago;}
 
-    public void setTipo_pago(String tipo_pago) {
-        this.tipo_pago = tipo_pago;
-    }
+    public void setTipo_pago(String tipo_pago) {this.tipo_pago = tipo_pago;}
 
-    public Cliente getCliente() {
-        return cliente;
-    }
+    public Cliente getCliente() {return cliente;}
 
     public void setCliente(Cliente cliente) { this.cliente = cliente; }
 

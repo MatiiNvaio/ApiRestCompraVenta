@@ -30,7 +30,7 @@ public class ClienteRestController {
     @PostMapping("/clientes")
     @ResponseStatus(HttpStatus.CREATED)
     public Cliente create(@RequestBody Cliente cliente) {
-        cliente.setCreateAt(new Date());
+        cliente.setFecha_nacimiento(new Date());
         this.clienteService.save(cliente);
         return cliente;
     }
